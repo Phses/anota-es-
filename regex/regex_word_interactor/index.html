@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Interactor</title>
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      line-height: 1.6rem;
+    }
+    .btn {
+      display: inline-block;
+      cursor: pointer;
+      padding: 1em 2em;
+    }
+    h1, form {
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #333333;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Word Interactor</h1>
+    <form class="form-control">
+      <textarea id="text-field" rows="10" cols="50">"I'm collecting food for the winter," said the ant, "and I suggest you do the same." And off she went, helping the other ants to carry food to their store. The grasshopper carried on hopping and singing. When winter came the ground was covered with snow. The grasshopper had no food and was hungry. So he went to the ants and asked for food.</textarea>
+      <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+    <p class="output"></p>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
